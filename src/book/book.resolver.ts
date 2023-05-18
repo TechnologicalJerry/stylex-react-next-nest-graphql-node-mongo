@@ -6,7 +6,7 @@ import { UpdateBookInput } from './dto/update-book.input';
 
 @Resolver(() => Book)
 export class BookResolver {
-  constructor(private readonly bookService: BookService) {}
+  constructor(private readonly bookService: BookService) { }
 
   @Mutation(() => Book)
   createBook(@Args('createBookInput') createBookInput: CreateBookInput) {
