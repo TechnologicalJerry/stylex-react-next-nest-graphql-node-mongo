@@ -5,4 +5,4 @@ import { BookResolver } from './book.resolver';
 @Module({
   providers: [BookResolver, BookService]
 })
-export class BookModule {}
+export class BookModule { }
